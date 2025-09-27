@@ -47,6 +47,7 @@ function Weather() {
             if (city === "") {
                 setNoData(false)
                 setWelcome(false)
+                setCityError(true)
             }
             else {
                 const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${import.meta.env.VITE_APP_ID}`
@@ -82,8 +83,8 @@ function Weather() {
                         <img src={serach_icon} onClick={() => search(inputRef.current.value)} />
                     </div>
                     {noData ? "" : <h3 style={{ color: 'red', textAlign: 'center', paddingTop: '5px' }}>City name is required</h3>}
-                    {cityError ? "" : <h3 style={{ color: 'red', textAlign: 'center', paddingTop: '5px' }}>City not found</h3>}
-                    {weatherData && cityError ? <>
+                    {cityError? "" : <h3 style={{ color: 'red', textAlign: 'center', paddingTop: '5px' }}>City not found</h3>}
+                    {weatherData && cityError  && noData? <>
                         <div className='weather-results'>
                             <img src={weatherData.image} className='weather-img' />
                             <h1>{weatherData.temperature}°c</h1>

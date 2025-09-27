@@ -9,7 +9,7 @@
   background: linear-gradient(to right, #e7ecec, #fafeff);
 }
 .weather-pt{
-  height: 100vh;
+  margin-top: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -29,7 +29,7 @@
   outline: 0;
   border: 0;
   font-weight: 500;
-  width: 300px;
+  width: 90%;
   font-size: 18px;
   padding-left: 20px;
   border-radius: 30px;
@@ -82,6 +82,6 @@
 }
 @media screen and (max-width:480px) {
   .weather-box{
-    padding: 5px;
+    padding: 15px;
   }
 }
