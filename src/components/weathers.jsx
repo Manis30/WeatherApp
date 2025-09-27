@@ -63,6 +63,7 @@ function Weather() {
                 })
                 updateBgcolor(data.weather[0].main.toLowerCase())
                 setNoData(true)
+                console.log(import.meta.env.VITE_APP_ID)
                 setCityError(true)
                 setWelcome(false)
                 inputRef.current.value = ""
