@@ -76,7 +76,7 @@ function Weather() {
     }
     return (
         <div className="weather" style={{ background: bgColorBy ,transitionProperty:'background',transitionDuration:'0.5s'}}>
-            {welcome ? <h1 style={{ color: '#003cff', fontSize: '30px', textTransform: 'capitalize', fontFamily: 'Poppins', textAlign: 'center', paddingTop: '30px' }}>Welcome to Mani's Weather App</h1 > : <h1 style={{ color: '#003cff', fontSize: '30px', textTransform: 'capitalize', fontFamily: 'Poppins', textAlign: 'center', paddingTop: '30px' }}>Weather App</h1>}
+            {welcome ? <h1 style={{ color: '#003cff', fontSize: '30px', textTransform: 'capitalize', fontFamily: 'Poppins', textAlign: 'center', paddingTop: '30px' }}>Welcome to Weather App</h1 > : <h1 style={{ color: '#003cff', fontSize: '30px', textTransform: 'capitalize', fontFamily: 'Poppins', textAlign: 'center', paddingTop: '30px' }}>Weather App</h1>}
             <div className='weather-pt'>
                 <div className="weather-box" style={{ background: bgColorFm,transitionProperty:'background',transitionDuration:'0.5s' }}>
                     <div className='weather-boxs'>
